@@ -7,7 +7,7 @@ function Header() {
       <div className="container-xl">
         <div className="navbar-brand d-flex align-items-center">
           <div className="d-flex align-items-center justify-content-center"></div>
-          <span>Logo</span>
+          <span className="logo">LOGO</span>
         </div>
         <button
           className="navbar-toggler"
@@ -24,21 +24,44 @@ function Header() {
           <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link" href="about.html">
-                One
+                FAQ
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="contact.html">
-                Two
+                SERVICE FEES
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="api.html">
+                API
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="news.html">
+                NEWS
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="news.html">
+                MADEMAZE
               </a>
             </li>
             <li className="nav-item">
               <select className="nav-link nav-select" id="lang">
                 <option disabled>Choose language</option>
                 <option defaultValue="/en/" selected>
-                  En
+                  EN
                 </option>
-                <option defaultValue="/ru/">Russian</option>
+                <option defaultValue="/ru/">
+                  RUS
+                </option>
+                <option style={{backgroundImage: "url(../image/flags/RU.png)"}} defaultValue="/fr/">
+                  FR
+                </option>
+                <option defaultValue="/cn/">
+                  CN
+                </option>
               </select>
             </li>
           </ul>

@@ -50,7 +50,7 @@ body {
   font-family: var(--bs-font-sans-serif);
   font-size: 1rem;
   font-weight: 400;
-  background-image: linear-gradient(40deg, #0c0e37 0%, #23134c 100%);    
+  background-image: url("../image/back/Desk.png");
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -4392,18 +4392,14 @@ fieldset:disabled .btn {
   display: block;
 }
 
-.App {
-  width: 100%;
-  height: 100%;
-}
-
 .navbar {
+  position: absolute;
   top: -30px;
   width: 100%;
   position: fixed !important;
   display: -webkit-box;
   display: -ms-flexbox;
-  background-image: linear-gradient(40deg, #0c0e37 0%, #23134c 100%);
+
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -12303,4 +12299,224 @@ button {
 .comment-list li .comment-body .reply:hover {
   color: #fff;
   background: black;
+}
+
+.params-row {
+  display: flex;
+  font-family: "Source Code Pro", "Arimo", "Bayon";
+}
+
+.params-elem {
+  flex: 0 1 20%;
+}
+
+.hours-block {
+  margin-bottom: 1px;
+}
+
+.logo {
+  font-family: "Source Code Pro", "Arimo", "Bayon";
+}
+
+.address {
+  padding: 6%;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.Text {
+  position: relative;
+  display: flex;
+  font-family: "Source Code Pro", "Arimo", "Bayon";
+  align-items: center;
+  padding-top: 7rem;
+  padding-bottom: 0.3125rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btc {
+  width: 220px;
+  height: 50px;
+  color: white;
+  border: 1px solid #debc55;
+  display: inline-block;
+  position: relative;
+}
+
+.btc-input {
+  position: absolute;
+  top: 25%;
+  font-family: "Source Code Pro", "Arimo", "Bayon";
+}
+
+.params {
+  margin-top: 50px;
+  color: white;
+}
+
+.service {
+  margin-top: 50px;
+  color: white;
+  display: inline-block;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-width: 600px;
+}
+
+.coins-block {
+  padding-bottom: 2.5px;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.help {
+  display: inline-block;
+  position: absolute;
+  margin-top: 13px;
+}
+
+.help-button {
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+  background: gray;
+  border-radius: 50%;
+  color: white;
+  margin: 0 0 0 5px;
+}
+
+.help-button-delay {
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+  background: gray;
+  border-radius: 50%;
+  color: white;
+  margin: 0 0 -20px 5px;
+}
+
+.anot-address {
+  position: absolute;
+  top: 40%;
+}
+
+.delay-block {
+  padding-bottom: 1.5px;
+  margin: 0 0 0 36px;
+  border-bottom: 1px solid white;
+}
+
+.ser-fee {
+  display: inline-block;
+}
+
+.each-address {
+  font-size: 12px;
+  padding-top: 14px;
+  margin-left: 43px;
+  float: left;
+}
+
+.Per {
+  color: #debc55;
+}
+
+.per-select {
+  float: left;
+  font-size: 24px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.mix-coins {
+  margin-top: 50px;
+  width: 500px;
+  align-items: center;
+  display: flex;
+  font-family: "Source Code Pro", "Arimo", "Bayon";
+}
+
+.mix-total {
+  text-align: center;
+  margin: 0 0 0 28px;
+}
+
+.mix-button {
+  width: 150px;
+  color: white;
+}
+
+.total {
+  font-size: 12px;
+  color: #cbac51;
+  text-shadow: #cbac51 1px 0 10px;
+}
+
+.amount {
+  font-size: 36px;
+  color: #cbac51;
+  text-shadow: #cbac51 1px 0 25px;
+}
+
+.Address {
+  color: orange;
+}
+
+.mix-block {
+  width: 150px;
+  background: #4922b3;
+}
+
+.score-checkbox {
+  margin-left: 10px;
+}
+label {
+  padding-left: 10px;
+}
+
+.per-score {
+  font-weight: 800;
+}
+
+.option {
+  color: white;
+}
+
+.nav-item {
+  font-family: "Source Code Pro", "Arimo", "Bayon";
+}
+
+.percent {
+  float: left;
+}
+
+.service-row {
+  font-family: "Source Code Pro", "Arimo", "Bayon";
+  display: flex;
+  align-items: center;
+}
+
+.help-button-address {
+  width: 25px;
+  height: 25px;
+  margin: 0 0 -20px 0;
+  opacity: 0;
+}
+
+.help-button-coins {
+  width: 25px;
+  height: 25px;
+  margin: 0 0 -20px 0;
+  opacity: 0;
+}
+
+.help-service {
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+  background: gray;
+  border-radius: 50%;
+  color: white;
+  margin: 0 0 -20px 5px;
 }
