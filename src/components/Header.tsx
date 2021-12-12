@@ -1,68 +1,81 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/style.css";
+import logo from "../image/logo/logo.png";
+import Select from "./select/SelectFlags";
 
 function Header() {
   return (
     <nav className="navbar navbar-expand-lg ftco-navbar-light">
-      <div className="container-xl">
-        <div className="navbar-brand d-flex align-items-center">
-          <div className="d-flex align-items-center justify-content-center"></div>
-          <span className="logo">LOGO</span>
+      <div className="container-xl navbar-container">
+        <div className="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label className="menu__btn" htmlFor="menu__toggle">
+            <span></span>
+          </label>
+          <ul className="menu__box">
+            <li>
+              <a className="menu__item" href="#">
+                Главная
+              </a>
+            </li>
+            <li>
+              <a className="menu__item" href="#">
+                Проекты
+              </a>
+            </li>
+            <li>
+              <a className="menu__item" href="#">
+                Команда
+              </a>
+            </li>
+            <li>
+              <a className="menu__item" href="#">
+                Блог
+              </a>
+            </li>
+            <li>
+              <a className="menu__item" href="#">
+                Контакты
+              </a>
+            </li>
+            <li>
+              <div className="menu__item">
+                <Select />
+              </div>
+            </li>
+          </ul>
         </div>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-        Menu
-        </button>
-        <div className="collapse navbar-menu navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link" href="about.html">
-                FAQ
+        <div className="menu-line">
+          <ul className="menu-inline navbar-nav">
+            <li>
+              <a className="menu__item" href="#">
+                Главная
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="contact.html">
-                SERVICE FEES
+            <li>
+              <a className="menu__item" href="#">
+                Проекты
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="api.html">
-                API
+            <li>
+              <a className="menu__item" href="#">
+                Команда
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="news.html">
-                NEWS
+            <li>
+              <a className="menu__item" href="#">
+                Блог
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="news.html">
-                MADEMAZE
+            <li>
+              <a className="menu__item" href="#">
+                Контакты
               </a>
             </li>
-            <li className="nav-item">
-              <select className="nav-link nav-select" id="lang">
-                <option disabled>Choose language</option>
-                <option defaultValue="/en/" selected>
-                  EN
-                </option>
-                <option defaultValue="/ru/">
-                  RUS
-                </option>
-                <option style={{backgroundImage: "url(../image/flags/RU.png)"}} defaultValue="/fr/">
-                  FR
-                </option>
-                <option defaultValue="/cn/">
-                  CN
-                </option>
-              </select>
+            <li>
+              <div className="menu__item">
+                <Select />
+              </div>
             </li>
           </ul>
         </div>

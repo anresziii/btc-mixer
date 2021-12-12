@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/style.css";
+import Select from "./select/selectTokens";
 export default function Coin() {
   return (
     <div className="params">
@@ -8,19 +9,9 @@ export default function Coin() {
           <div className="coins-block">
             <label htmlFor="coins">Coin</label>
             <button className="help-button-coins">?</button>
-            <select className="coins-sel option nav-link nav-select" id="coins">
-              <option defaultValue="/en/" selected>
-                Tokens
-              </option>
-              <option defaultValue="/ru/">
-                {" "}
-                <img src="./image/coins/eth.png" alt="" />
-              </option>
-              <option defaultValue="/ru/">
-                {" "}
-                <img src="./image/coins/atm.png" alt="" />
-              </option>
-            </select>
+            <div className="coins-sel option nav-link nav-select" id="coins">
+              <Select />
+            </div>
           </div>
         </div>
         <div className="params-elem">
