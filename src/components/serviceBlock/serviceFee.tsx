@@ -1,6 +1,7 @@
 import React from "react";
-import "../css/style.css";
-export default function Per() {
+import "../../css/style.css";
+
+export default function ServiceFee() {
   return (
     <div className="service">
       <div className="service-row">

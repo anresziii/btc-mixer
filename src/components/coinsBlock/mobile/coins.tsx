@@ -1,27 +1,20 @@
 import React from "react";
-import "../css/style.css";
-import Select from "./select/selectTokens";
-export default function Coin() {
+import "../../../css/style.css";
+import "./coinsStyle.css";
+import Tokens from "../../customElements/select/selectTokens";
+import Address from "./components/address";
+import AnotherButton from "./components/anotherButton";
+
+export default function CoinsMobile() {
   return (
     <div className="params">
+      <Address />
       <div className="params-row">
         <div className="params-elem">
           <div className="coins-block">
             <label htmlFor="coins">Coin</label>
-            <button className="help-button-coins">?</button>
             <div className="coins-sel option nav-link nav-select" id="coins">
-              <Select />
-            </div>
-          </div>
-        </div>
-        <div className="params-elem">
-          <div className="address-block">
-            <label className="address-title" htmlFor="address">Receiver's address</label>
-            <button className="help-button-address">?</button>
-            <div id="address" className="Cod">
-              <div>
-                <span className="address">1NJRRCKQTFJLUQXFYCEMXCTH77M5TAYO</span>
-              </div>
+              <Tokens />
             </div>
           </div>
         </div>
@@ -48,12 +41,8 @@ export default function Coin() {
             </div>
           </div>
         </div>
-        <div className="params-elem">
-          <div className="anot-address">
-            <span>+ . ADD ANOTHER ADDRESS</span>
-          </div>
-        </div>
       </div>
+      <AnotherButton />
     </div>
   );
 }

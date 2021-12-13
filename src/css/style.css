@@ -5531,7 +5531,7 @@ progress {
 }
 .navbar {
   position: absolute;
-  top: -30px;
+  top: -20px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5565,29 +5565,8 @@ progress {
   justify-content: space-between;
 }
 
-.params-row {
-  display: flex;
-  font-family: "Source Code Pro", "Arimo", "Bayon";
-}
-
-.params-elem {
-  flex: 0 1 20%;
-}
-
-.hours-block {
-  margin-bottom: 1px;
-}
-
 .logo {
   font-family: "Source Code Pro", "Arimo", "Bayon";
-}
-
-.address {
-  padding: 6%;
-  padding-bottom: 37px;
-  border-bottom: 1px solid white;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
 }
 
 .Text {
@@ -5595,13 +5574,13 @@ progress {
   display: flex;
   font-family: "Source Code Pro", "Arimo", "Bayon";
   align-items: center;
-  padding-top: 7rem;
+  padding-top: 9rem;
   padding-bottom: 0.3125rem;
   text-decoration: none;
   white-space: nowrap;
 }
 .btc {
-  width: 220px;
+  width: 425px;
   height: 50px;
   color: white;
   border: 1px solid #debc55;
@@ -5615,11 +5594,6 @@ progress {
   font-family: "Source Code Pro", "Arimo", "Bayon";
 }
 
-.params {
-  margin-top: 50px;
-  color: white;
-}
-
 .service {
   margin-top: 50px;
   color: white;
@@ -5629,16 +5603,12 @@ progress {
   min-width: 600px;
 }
 
-.coins-block {
-  padding-bottom: 2.5px;
-  border-bottom: 1px solid white;
-  border-left: 1px solid white;
-}
-
 .help {
   display: inline-block;
   position: absolute;
-  margin-top: 13px;
+  margin-top: 11.5px;
+  margin-right: 15px;
+  right: 0;
 }
 
 .help-button {
@@ -5651,26 +5621,13 @@ progress {
   margin: 0 0 0 5px;
 }
 
-.help-button-delay {
+.help-add-address {
   width: 25px;
   height: 25px;
   opacity: 0.5;
-  background: gray;
+  background: #4922B3;
   border-radius: 50%;
   color: white;
-  margin: 0 0 -20px 5px;
-}
-
-.anot-address {
-  margin-top: 28px;
-  width: 100%;
-  margin-left: 28px;
-}
-
-.delay-block {
-  padding-bottom: 20px;
-  margin: 0 0 0 36px;
-  border-bottom: 1px solid white;
 }
 
 .ser-fee {
@@ -5737,12 +5694,12 @@ label {
   padding-left: 10px;
 }
 
-.per-score {
-  font-weight: 800;
+.score-title {
+  margin-left: 20px;
 }
 
-.option {
-  color: white;
+.per-score {
+  font-weight: 800;
 }
 
 .nav-item {
@@ -5759,20 +5716,6 @@ label {
   align-items: center;
 }
 
-.help-button-address {
-  width: 25px;
-  height: 25px;
-  margin: 0 0 -20px 0;
-  opacity: 0;
-}
-
-.help-button-coins {
-  width: 25px;
-  height: 25px;
-  margin: 0 0 -20px 0;
-  opacity: 0;
-}
-
 .help-service {
   width: 25px;
   height: 25px;
@@ -5787,20 +5730,23 @@ label {
   opacity: 0;
 }
 
+.mobile-score {
+  margin-top: 30px;
+}
+
 .menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center; /* центрируем содержимое кнопки */
+  margin: -10px 0 0 35px;
+  display: flex;
+  align-items: center;
   position: fixed;
-  top: 20px;
-  left: 20px;
   width: 26px;
   height: 26px;
   cursor: pointer;
   z-index: 1;
 }
 
-.hamburger-menu {
-  display: none;
+.main {
+  margin-top: 150px;
 }
 
 .menu__btn > span,
@@ -5829,7 +5775,7 @@ label {
   top: 0;
   left: -100%;
   height: 100%;
-  width: 300px;
+  width: 100%;
   margin: 0;
   padding: 80px 0;
   list-style: none;
@@ -5840,7 +5786,7 @@ label {
 
 .menu__item {
   display: block;
-  padding: 12px 24px;
+  padding: 0 24px 0 0;
   color: white; 
   font-family: "Source Code Pro", "Arimo", "Bayon";
   font-size: 20px;
@@ -5858,26 +5804,171 @@ label {
   top: 0;
   transform: rotate(90deg);
 }
-#menu__toggle:checked ~ .menu__box {
+#menu__toggle:checked ~ .menu__box {  
   visibility: visible;
   left: 0;
 }
 
 .menu-line {
+  position: absolute;
+  right: 0;
+  top: 25px;
 }
 
-@media (max-width: 992px) {
-  .hamburger-menu {
-    display: block;
-  }
+.logo {
+  width: 300px;
+  height: 80px;
 }
 
-@media (max-width: 992px) {
-  .menu-line {
-    display: none;
-  }
+.logo-mobile {
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
 }
 
 li {
   height: 20px;
+}
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+}
+
+.checkbox label {
+  position: relative;
+  display: inline-block;
+  padding-left: 22px;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+}
+
+.checkbox label::before{
+  height: 20px;
+  width: 20px;
+  border: 1px solid #CBAC51;
+  left: 0px;
+  top: 3px;
+}
+
+.checkbox label::after {
+  height: 8px;
+  width: 12px;
+  color: #CBAC51;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(-45deg);
+  left: 4px;
+  top: 7px;
+}
+
+.checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+.params {
+  margin-top: 50px;
+  color: white;
+}
+
+.params-row {
+  width: 425px;
+  display: flex;
+  font-family: "Source Code Pro", "Arimo", "Bayon";
+}
+
+.params-elem {
+  flex: 0 1 50%;
+}
+
+.coins-block {
+  padding-bottom: 2.5px;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.help-button-coins {
+  width: 25px;
+  height: 25px;
+  margin: 0 0 -20px 0;
+  opacity: 0;
+}
+
+.option {
+  color: white;
+}
+
+.help-button-address {
+  width: 25px;
+  height: 25px;
+  margin: 0 0 -20px 0;
+  opacity: 0;
+}
+
+.address-addr {
+  padding-bottom: 34.5px;
+  border-left: 1px solid white; 
+  border-right: 1px solid white; 
+  border-bottom: 1px solid white; 
+}
+
+.addr {
+  padding: 0 5px;
+}
+
+.delay-block {
+  padding-bottom: 20px;
+  margin: 0 !important;
+  border-bottom: 1px solid white;
+}
+
+.help-button-delay {
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+  background: gray;
+  border-radius: 50%;
+  color: white;
+  margin: 0 0 -20px 5px;
+}
+
+/* .hint{
+  width: 100px;
+  height: 50px;
+  background: black;
+}
+
+.hint:before{
+  text-align: center;
+  content: "tooltip";
+  display: none;
+}
+
+.hint:hover{
+  z-index: 10;
+  position: relative;
+}
+
+.hint:hover::before{
+  width: 100px;
+  display: block;
+  background: red;
+} */
+
+.hours-block {
+  margin-bottom: 1px;
+}
+
+.anot-address {
+  margin-top: 28px;
+  width: 100%;
+  margin-left: 28px;
 }

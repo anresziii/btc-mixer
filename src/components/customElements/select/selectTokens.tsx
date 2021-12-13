@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import CN from "../../image/flags/CN.png";
-import FR from "../../image/flags/FR.png";
-import GB from "../../image/flags/GB.png";
-import RU from "../../image/flags/RU.png";
+import ATM from "../../../image/coins/atm.png";
+import BTC from "../../../image/coins/btc.png";
+import ETH from "../../../image/coins/eth.png";
 
-function Select(props: any) {
+function Tokens(props: any) {
   const Main = styled("div")`
     font-family: sans-serif;
-    height: 100vh;
+    height: 40px;
   `;
 
   const DropDownContainer = styled("div")`
-    width: 10.5em;
+    width: 85px;
     margin: 0 auto;
   `;
 
@@ -41,14 +40,14 @@ function Select(props: any) {
 
   const ListItem = styled("li")`
     list-style: none;
-    margin-bottom: 0.8em;
+    margin-bottom: 1.8em;
   `;
 
-  useEffect(() => {
-    console.log(props)
-  }, [])
+  // useEffect(() => {
+  //   console.log(props)
+  // }, [])
 
-  const [options, setOptions] = useState([CN, FR, GB, RU]);
+  const [options, setOptions] = useState([ATM, BTC, ETH]);
   // const [renderOptions, setRenderOptions] = useState<string[]>(options.slice(1));
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(options[0]);
@@ -89,4 +88,4 @@ function Select(props: any) {
   );
 }
 
-export default Select;
+export default Tokens;

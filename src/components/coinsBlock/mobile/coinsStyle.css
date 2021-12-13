@@ -1,0 +1,72 @@
+.params {
+  margin-top: 50px;
+  color: white;
+}
+
+.coins-block {
+  padding-bottom: 2.5px;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.help-button-coins {
+  width: 25px;
+  height: 25px;
+  margin: 0 0 -20px 0;
+  opacity: 0;
+}
+
+.option {
+  color: white;
+}
+
+.address-block {
+  height: 100px;
+  width: 425px;
+}
+
+.help-button-address {
+  width: 25px;
+  height: 25px;
+  margin: 0 0 -20px 0;
+  opacity: 0;
+}
+
+.address {
+  width: 425px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.delay-block {
+  padding-bottom: 19px;
+  margin: 0;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.help-button-delay {
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+  background: gray;
+  border-radius: 50%;
+  color: white;
+  margin: 0 0 -20px 5px;
+}
+
+.hours-block {
+  margin-bottom: 1px;
+}
+
+.anot-address {
+
+}
+
+.another {
+  background: #4922B3;
+  width: 425px;
+  height: 41px;
+}

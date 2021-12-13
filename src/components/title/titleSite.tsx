@@ -1,7 +1,7 @@
 import React from "react";
-import "../css/style.css";
+import "../../css/style.css";
 
-export default function Text() {
+export default function Title() {
   return (
     <div>
       <h1 className="Text">Bitcoin Mixer</h1>
