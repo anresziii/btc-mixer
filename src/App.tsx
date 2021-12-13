@@ -13,7 +13,7 @@ import useWindowSize from "./hooks/useWindowSize";
 
 function App() {
   const size = useWindowSize();
-  const resultCompare = size.width < 401;
+  const resultCompare = size.width > 401;
   return (
     <div>
       {resultCompare ? (
