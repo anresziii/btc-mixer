@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/style.css";
+import "../../../css/style.css";
 
 export default function Score() {
   return (
@@ -15,9 +15,9 @@ export default function Score() {
             </label>
           </div>
         </div>
-        <div className="help">
-          <button className="help-button">?</button>
-        </div>
+      </div>
+      <div className="help">
+        <button className="help-button">?</button>
       </div>
     </div>
   );

@@ -5580,7 +5580,15 @@ progress {
   white-space: nowrap;
 }
 .btc {
-  width: 425px;
+  width: 250px;
+  height: 50px;
+  color: white;
+  border: 1px solid #debc55;
+  display: inline-block;
+  position: relative;
+}
+.btc-m {
+  width: 400px;
   height: 50px;
   color: white;
   border: 1px solid #debc55;
@@ -5600,10 +5608,16 @@ progress {
   display: inline-block;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  min-width: 600px;
+  width: 400px;
 }
 
 .help {
+  display: inline-block;
+  position: absolute;
+  margin-top: 11.5px;
+  margin-right: 15px;
+}
+.help-m {
   display: inline-block;
   position: absolute;
   margin-top: 11.5px;
@@ -5636,20 +5650,24 @@ progress {
 
 .each-address {
   font-size: 12px;
-  padding-top: 14px;
-  margin-left: 43px;
-  float: left;
 }
 
 .Per {
   color: #debc55;
+  margin-top: 55px;
 }
 
 .per-select {
   float: left;
   font-size: 24px;
+  width: 400px;
   border-left: 1px solid white;
   border-bottom: 1px solid white;
+}
+
+.mix-total {
+  text-align: center;
+  margin: 0 0 0 28px;
 }
 
 .mix-coins {
@@ -5659,15 +5677,26 @@ progress {
   display: flex;
   font-family: "Source Code Pro", "Arimo", "Bayon";
 }
-
-.mix-total {
-  text-align: center;
-  margin: 0 0 0 28px;
+.mix-coins-m {
+  margin-top: 25px;
+  width: 500px;
+  align-items: center;
+  display: inline-block;
+  font-family: "Source Code Pro", "Arimo", "Bayon";
 }
 
 .mix-button {
   width: 150px;
+  background: #4922b3;
   color: white;
+}
+.mix-button-m {
+  width: 400px;
+  height: 41px;
+  background: #4922b3;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .total {
@@ -5685,6 +5714,9 @@ progress {
 .mix-block {
   width: 150px;
   background: #4922b3;
+}
+.mix-block-m {
+  max-width: 400px;
 }
 
 .score-checkbox {
@@ -5707,6 +5739,7 @@ label {
 }
 
 .percent {
+  width: 400px;
   float: left;
 }
 
@@ -5735,7 +5768,7 @@ label {
 }
 
 .menu__btn {
-  margin: -10px 0 0 35px;
+  margin: -10px 0 0 -15px;
   display: flex;
   align-items: center;
   position: fixed;
@@ -5743,6 +5776,17 @@ label {
   height: 26px;
   cursor: pointer;
   z-index: 1;
+}
+
+@media (max-width: 425px) {
+  .menu__btn {
+    margin: -10px -10px 0 0;
+  }
+}
+@media (max-width: 376px) {
+  .menu__btn {
+    margin: -10px -8px 0 40px;
+  }
 }
 
 .main {
@@ -5822,8 +5866,8 @@ label {
 
 .logo-mobile {
   margin-top: 10px;
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 45px;
 }
 
 li {
@@ -5880,7 +5924,7 @@ li {
 }
 
 .params-row {
-  width: 425px;
+  width: 400px;
   display: flex;
   font-family: "Source Code Pro", "Arimo", "Bayon";
 }
@@ -5965,10 +6009,4 @@ li {
 
 .hours-block {
   margin-bottom: 1px;
-}
-
-.anot-address {
-  margin-top: 28px;
-  width: 100%;
-  margin-left: 28px;
 }

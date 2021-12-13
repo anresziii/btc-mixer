@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../../css/style.css";
 import logo from "../../../image/logo/logo.png";
 import Flags from "../../customElements/select/selectFlags";
-import Score from "../../scoreBlock/score";
+import ScoreMobile from "../../scoreBlock/mobile/score";
 
 function HeaderMobile() {
   return (
@@ -52,7 +52,7 @@ function HeaderMobile() {
       </div>
       <div className="container">
         <div className="mobile-score">
-          <Score />
+          <ScoreMobile />
         </div>
       </div>
     </nav>

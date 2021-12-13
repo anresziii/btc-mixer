@@ -3,8 +3,9 @@ import Coins from "./components/coinsBlock/desktop/coins";
 import CoinsMobile from "./components/coinsBlock/mobile/coins";
 import Header from "./components/header/desktop/header";
 import HeaderMobile from "./components/header/mobile/header";
-import Score from "./components/scoreBlock/score";
-import Mix from "./components/mixBlock/mixCoins";
+import Score from "./components/scoreBlock/desktop/score";
+import Mix from "./components/mixBlock/desktop/mixCoins";
+import MixMobile from "./components/mixBlock/mobile/mixCoinsM";
 import ServiceFee from "./components/serviceBlock/serviceFee";
 import Title from "./components/title/titleSite";
 import "./css/style.css";
@@ -33,7 +34,7 @@ function App() {
             <div className="main">
               <CoinsMobile />
               <ServiceFee />
-              <Mix />
+              <MixMobile />
             </div>
           </div>
         </div>

@@ -33,7 +33,7 @@
 }
 
 .address {
-  width: 425px;
+  width: 400px;
   padding-bottom: 20px;
   padding-left: 10px;
   border-bottom: 1px solid white;
@@ -62,11 +62,15 @@
 }
 
 .anot-address {
-
+  text-align: center;
 }
 
 .another {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #4922B3;
-  width: 425px;
+  width: 400px;
   height: 41px;
+  margin-top: 20px;
 }
