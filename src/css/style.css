@@ -5785,7 +5785,12 @@ label {
 }
 @media (max-width: 376px) {
   .menu__btn {
-    margin: -10px -8px 0 40px;
+    margin: -10px 0 0 34px;
+  }
+}
+@media (max-width: 321px) {
+  .menu__btn {
+    margin: -10px 0 0 87px;
   }
 }
 
@@ -6010,3 +6015,31 @@ li {
 .hours-block {
   margin-bottom: 1px;
 }
+
+@media (max-width: 426px) {
+  .params-row {
+    width: 100%;
+  }
+  .btc-m {
+    min-width: 400px;
+    width: 100%;
+  }
+  .service {
+    width: 100%;
+  }
+  .per-select {
+    width: 100%;
+  }
+  .mix-button-m {
+    width: 100%;
+  }
+  .percent {
+    width: 100%;
+  }
+  .mix-block-m {
+    width: 100%;
+  }
+  .container-xl, container {
+    height: 100%;
+  }
+} 

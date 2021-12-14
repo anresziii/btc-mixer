@@ -24,7 +24,10 @@ export default function Coins() {
             <button className="help-button-address">?</button>
             <div id="address">
               <div className="address-addr">
-                <span className="addr">1NJRRCKQTFJLUQXFYCEMXCTH77M5TAYO</span>
+                <input
+                  placeholder={"1NJRRCKQTFJLUQXFYCEMXCTH77M5TAYO"}
+                  className="addr"
+                ></input>
               </div>
             </div>
           </div>

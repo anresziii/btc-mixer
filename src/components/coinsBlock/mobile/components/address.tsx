@@ -10,7 +10,7 @@ function Address() {
         </label>
         <div id="address" className="address">
           <div>
-            <span>1NJRRCKQTFJLUQXFYCEMXCTH77M5TAYO</span>
+            <input placeholder={"1NJRRCKQTFJLUQXFYCEMXCTH77M5TAYO"}></input>
           </div>
         </div>
       </div>

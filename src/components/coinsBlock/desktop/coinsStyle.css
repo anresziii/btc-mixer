@@ -1,3 +1,8 @@
 .anot-address {
-    width: 400px;
+  width: 400px;
+}
+@media (max-width: 376px) {
+  .anot-address {
+    width: 351px;
+  }
 }
